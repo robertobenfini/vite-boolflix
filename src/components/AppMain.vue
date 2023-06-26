@@ -22,11 +22,11 @@ export default {
 <main>
   <div class="container">
     <div class="row">
-
-      <!--ciclo for dell'array-->
-      <div v-for="(card, index) in store.arrayFilms" :key="index">
-          <AppCards :myCard="card" />
-          <br>
+      <div class="content d-flex flex-wrap">
+        <!--ciclo for dell'array-->
+        <div v-for="(card, index) in store.arrayFilms" :key="index">
+            <AppCards :myCard="card" />
+        </div>
       </div>
     </div>
   </div>
