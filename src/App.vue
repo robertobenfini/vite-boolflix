@@ -15,7 +15,7 @@ export default {
   },
   data(){
     return{
-      store
+      store,
     }
   },
 
@@ -49,7 +49,7 @@ export default {
     <!--passo il valore dell'emit al padre-->
     <AppHeader @film="getFilms" />
     <AppMain />
-    
+
   </div>
 
 </template>
