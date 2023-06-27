@@ -20,11 +20,11 @@ export default {
 <template>
 
 <main>
-  <div class="container">
+  <div class="container pt-5">
     <div class="row">
-      <div class="content d-flex flex-wrap">
+      <div class="col d-flex flex-wrap justify-content-between">
         <!--ciclo for dell'array-->
-        <div v-for="(card, index) in store.arrayFilms" :key="index">
+        <div v-for="(card, index) in store.arrayFilms" :key="index" class="my_card">
             <AppCards :myCard="card" />
         </div>
       </div>
@@ -36,4 +36,13 @@ export default {
 
 <style lang="scss" scoped>
   
+  main{
+    background-color: #232323;
+  }
+  .my_card{
+    width: 300px;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+
 </style>
